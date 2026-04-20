@@ -1,0 +1,99 @@
+body {
+    background-color: #f3f7ff;
+}
+.btn-action {
+    background-color: #e1eaff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.btn-action:hover {
+    background-color: #ccdbff;
+    transform: scale(1.1);
+}
+
+.bg-success-subtle { background-color: #d1e7dd !important; }
+.bg-primary-subtle { background-color: #cfe2ff !important; }
+
+.filtros {
+    background-color: #f9fafd;
+}
+
+.formularioCrearNoticia{
+    background-color: #e7edff;
+    border-radius: 15px;
+    padding: 2%;
+}
+.ql-container.ql-snow {
+    min-height: 100px; 
+    max-height: 300px; 
+    overflow-y: auto; 
+    background-color: #ffffff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 5px;
+    border: 1px solid #dee2e6;
+    transition: all 0.2s ease-in-out;
+}
+@media (max-width: 768px) {
+    .ql-container.ql-snow {        
+    max-height: 170px; 
+    }
+    #drop-zone{
+        margin-top: 10%;
+        padding: 5px;
+    }
+    .historial{
+        margin-top: 15%;
+    }
+}
+
+.ql-toolbar.ql-snow {
+    background-color: #ebebeb;
+    border: 1px solid #e0e0e0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 8px;
+}
+.border-dashed {
+    border-style: dashed !important;
+    border-color: #dee2e6 !important; 
+    transition: all 0.2s ease-in-out;
+    padding: 10px;
+}
+
+#drop-zone.dragover #preview-container {
+    background-color: rgba(13, 110, 253, 0.15); 
+    border-color: #0d6efd !important;
+}
+#image-preview:not(.d-none) + #remove-image {
+    z-index: 20;
+}
+
+#preview-container:has(img:not(.d-none)) {
+    cursor: default;
+}
+.alerta-flotante {
+    position: fixed;   
+    top: 50%;          
+    left: 50%;         
+    transform: translate(-50%, -50%); 
+    z-index: 9999;    
+    min-width: 300px;  
+    max-width: 90%;  
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2); 
+    border-radius: 1.5rem; 
+}
+.tarjetaNoticia{
+    transition: all 0.3s ease;
+}
+.tarjetaNoticia:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
